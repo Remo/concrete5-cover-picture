@@ -1,0 +1,29 @@
+.cover-picture-text-slider {
+    position: relative;
+}
+.cover-picture-text-slider:hover .cover-picture-text {
+    left: 0 ! important;
+}
+.cover-picture-text-slider .cover-picture-picture {
+    position: absolute;
+    top: 0;
+    left: 0;      
+}
+.cover-picture-text-slider .cover-picture-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.8;
+    -webkit-opacity: 0.8;
+    -o-opacity: 0.8;
+    -ms-opacity: 0.8;
+    -moz-opacity: 0.8;
+    color: white;
+    -webkit-transition: left .5s ease-out;
+    -moz-transition: left .5s ease-out;
+    -ms-transition: left .5s ease-out;
+    -o-transition: left .5s ease-out;
+    transition: left .5s ease-out;
+}

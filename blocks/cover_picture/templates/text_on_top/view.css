@@ -1,0 +1,28 @@
+.cover-picture-move-down {
+    position: relative;
+}
+.cover-picture-move-down:hover .cover-picture-text {
+    opacity: 0.8;
+    -webkit-opacity: 0.8;
+    -o-opacity: 0.8;
+    -ms-opacity: 0.8;
+    -moz-opacity: 0.8;
+}
+.cover-picture-move-down .cover-picture-picture {
+    position: absolute;
+    top: 0;
+    left: 0;      
+}
+.cover-picture-move-down .cover-picture-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;  
+    background: white;
+}
