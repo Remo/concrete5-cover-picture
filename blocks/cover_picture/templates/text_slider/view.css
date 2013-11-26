@@ -1,5 +1,6 @@
 .cover-picture-text-slider {
     position: relative;
+    max-width: 100%;
 }
 .cover-picture-text-slider:hover .cover-picture-text {
     left: 0 ! important;

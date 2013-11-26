@@ -1,5 +1,6 @@
 .cover-picture-move-down {
     position: relative;
+    max-width: 100%;
 }
 .cover-picture-move-down:hover .cover-picture-text {
     opacity: 0.8;
