@@ -14,9 +14,7 @@ $height = $fileObject->getAttribute('height');
 ?>
 
 <div class="cover-picture-move-down" style="width: <?php echo $width?>px; height: <?php echo $height?>px; overflow: hidden;">
-    <div class="cover-picture-picture">
-        <img src="<?php echo $fileObject->getURL() ?>" alt=""/>
-    </div>
+    <img src="<?php echo $fileObject->getURL() ?>" alt=""/>
     <div class="cover-picture-text">
         <?php echo $content ?>
     </div>    

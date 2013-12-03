@@ -1,6 +1,7 @@
 .cover-picture-move-down {
     position: relative;
     max-width: 100%;
+    height: auto ! important;
 }
 .cover-picture-move-down:hover .cover-picture-text {
     opacity: 0.8;
@@ -9,10 +10,9 @@
     -ms-opacity: 0.8;
     -moz-opacity: 0.8;
 }
-.cover-picture-move-down .cover-picture-picture {
-    position: absolute;
-    top: 0;
-    left: 0;      
+.cover-picture-move-down img {
+    max-width: 100%;
+    height: auto ! important;
 }
 .cover-picture-move-down .cover-picture-text {
     position: absolute;
