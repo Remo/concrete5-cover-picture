@@ -13,9 +13,10 @@ $width = $fileObject->getAttribute('width');
 $height = $fileObject->getAttribute('height');
 ?>
 
-<div class="cover-picture-text-centered" style="width: <?php echo $width?>px; height: <?php echo $height?>px; overflow: hidden;">
+<div id="cover-picture-<?php echo $bID?>" class="cover-picture-text-centered" style="width: <?php echo $width?>px; height: <?php echo $height?>px; overflow: hidden;">
     <img src="<?php echo $fileObject->getURL() ?>" alt=""/>
     <div class="cover-picture-text">
+        <div class="cover-picture-overlay"></div>
         <div class="cover-picture-text-inner">
             <?php echo $content ?>
         </div>    

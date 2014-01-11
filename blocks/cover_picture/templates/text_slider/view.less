@@ -1,0 +1,31 @@
+#cover-picture-@{bID} {
+    position: relative;
+    max-width: 100%;
+
+    &:hover .cover-picture-text {
+        left: 0 ! important;
+    }
+    .cover-picture-picture {
+        position: absolute;
+        top: 0;
+        left: 0;      
+    }
+    .cover-picture-text {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: @color;
+        opacity: @opacity;
+        -webkit-opacity: @opacity;
+        -o-opacity: @opacity;
+        -ms-opacity: @opacity;
+        -moz-opacity: @opacity;
+        color: white;
+        -webkit-transition: left .5s ease-out;
+        -moz-transition: left .5s ease-out;
+        -ms-transition: left .5s ease-out;
+        -o-transition: left .5s ease-out;
+        transition: left .5s ease-out;
+    }
+}

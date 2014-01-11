@@ -7,5 +7,7 @@
         </field>
         <field name="content" type="X2"></field>
         <field name="fID" type="I" size="11"></field>
+        <field name="overlayOpacity" type="N" size="10.2"></field>        
+        <field name="overlayColor" type="C" size="20"></field>        
     </table>
 </schema>

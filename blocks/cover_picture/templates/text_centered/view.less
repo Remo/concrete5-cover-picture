@@ -1,0 +1,66 @@
+#cover-picture-@{bID} {
+    position: relative;
+    max-width: 100%;
+    height: auto ! important;
+
+    &:hover {
+        .cover-picture-overlay {
+            opacity: @opacity;
+            -webkit-opacity: @opacity;
+            -o-opacity: @opacity;
+            -ms-opacity: @opacity;
+            -moz-opacity: @opacity;
+        }
+        .cover-picture-text {
+            opacity: 1;
+            -webkit-opacity: 1;
+            -o-opacity: 1;
+            -ms-opacity: 1;
+            -moz-opacity: 1;
+        }
+    }
+    img {
+        max-width: 100%;
+        height: auto ! important;
+    }
+    .cover-picture-text {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        -webkit-transition: opacity .5s;
+        -moz-transition: opacity .5s;
+        -ms-transition: opacity .5s;
+        -o-transition: opacity .5s;
+        transition: opacity .5s;  
+    }
+    .cover-picture-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        -webkit-transition: opacity .5s;
+        -moz-transition: opacity .5s;
+        -ms-transition: opacity .5s;
+        -o-transition: opacity .5s;
+        transition: opacity .5s;  
+        background: @color;        
+    }
+
+    .cover-picture-text-inner {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+    }
+}
