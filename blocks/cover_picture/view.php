@@ -13,7 +13,7 @@ $width = $fileObject->getAttribute('width');
 $height = $fileObject->getAttribute('height');
 ?>
 
-<div id="cover-picture-<?php echo $bID ?>" style="width: <?php echo $width ?>px; height: <?php echo $height ?>px; overflow: hidden;">
+<div id="cover-picture-<?php echo $bID ?>" class="cover-picture" style="width: <?php echo $width ?>px; height: <?php echo $height ?>px; overflow: hidden;">
     <div class="cover-picture-picture">
         <img src="<?php echo $fileObject->getURL() ?>" alt=""/>
     </div>

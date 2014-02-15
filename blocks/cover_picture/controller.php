@@ -78,6 +78,15 @@ class CoverPictureBlockController extends Concrete5_Controller_Block_Content {
             // include generated css file
             $this->addHeaderItem('<link rel="stylesheet type="text/css" href="' . REL_DIR_FILES_CACHE . '/cover-picture-' . $lessFileHash . '.css' . '"/>');
         }
+        
+        // we load the JS necessary to bring the hover effect to touch devices inline to avoid having an additional JS file in every template
+        $this->addHeaderItem('<script type="text/javascript">
+            $("document").ready(function() {
+                $(".cover-picture").on("click", function(event) {
+                    event.preventDefault();
+                    $(this).toggleClass("cover-picture-active");                    
+                });
+            });</script>');
     }
 
 }
