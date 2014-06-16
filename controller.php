@@ -5,8 +5,8 @@ defined('C5_EXECUTE') or die('Access Denied.');
 class CoverPicturePackage extends Package {
 
     protected $pkgHandle = 'cover_picture';
-    protected $appVersionRequired = '5.6.2.1';
-    protected $pkgVersion = '0.9.2';
+    protected $appVersionRequired = '5.6.3.1';
+    protected $pkgVersion = '0.9.3';
 
     public function getPackageDescription() {
         return t("Adds a text covered by a picture");

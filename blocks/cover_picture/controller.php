@@ -21,7 +21,7 @@ class CoverPictureBlockController extends Concrete5_Controller_Block_Content {
     }
 
     public function save($args) {
-        $args['content'] = $this->translateTo($args['content']);
+        $args['content'] = Loader::helper('content')->translateTo($args['content']);
         $args['fID'] = intval($args['fID']);
         $args['overlayOpacity'] = $args['overlayOpacityValue'] ? $args['overlayOpacityValue'] : 0.7;
         $args['overlayColor'] = $args['overlayColor'] ? $args['overlayColor'] : '#999999';
