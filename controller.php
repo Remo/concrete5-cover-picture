@@ -6,7 +6,7 @@ class CoverPicturePackage extends Package {
 
     protected $pkgHandle = 'cover_picture';
     protected $appVersionRequired = '5.6.3.1';
-    protected $pkgVersion = '0.9.3';
+    protected $pkgVersion = '0.9.4';
 
     public function getPackageDescription() {
         return t("Adds a text covered by a picture");

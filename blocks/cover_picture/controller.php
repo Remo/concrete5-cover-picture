@@ -22,7 +22,8 @@ class CoverPictureBlockController extends Concrete5_Controller_Block_Content {
 
     public function save($args) {
         $args['content'] = Loader::helper('content')->translateTo($args['content']);
-        $args['fID'] = intval($args['fID']);
+        $args['fID'] = (int)$args['fID'];
+        $args['overlayfID'] = (int)$args['overlayfID'];
         $args['overlayOpacity'] = $args['overlayOpacityValue'] ? $args['overlayOpacityValue'] : 0.7;
         $args['overlayColor'] = $args['overlayColor'] ? $args['overlayColor'] : '#999999';
         parent::save($args);
@@ -63,12 +64,13 @@ class CoverPictureBlockController extends Concrete5_Controller_Block_Content {
 
             // cache file doesn't exist, rebuild it
             if (!file_exists($cacheFile)) {
-                $lessc = Loader::library('3rdparty/lessc.inc', 'cover_picture');
+                Loader::library('3rdparty/lessc.inc', 'cover_picture');
                 $lessc = new lessc();
                 $lessc->setVariables(
                         array(
                             'opacity' => $this->overlayOpacity,
                             'color' => $this->overlayColor,
+                            'overlayPicture' => $this->overlayfID ? 'url(' . File::getByID($this->overlayfID)->getRelativePath() . ')': 'none',
                             'bID' => $this->bID
                         )
                 );

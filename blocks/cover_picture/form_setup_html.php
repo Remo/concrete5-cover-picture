@@ -30,6 +30,14 @@ $fch = Loader::helper('form/color');
 </div>
 
 <div class="ccm-block-field-group">
+    <h4><?php echo t('Overlay Picture') ?></h4>
+    <?php
+    $al = Loader::helper('concrete/asset_library');
+    echo $al->image('overlayfID', 'overlayfID', t('Picture'), File::getByID($overlayfID));
+    ?>
+</div>
+
+<div class="ccm-block-field-group">
     <h4><?php echo t('Overlay Opacity') ?></h4>
     <div style="position: relative; height: 30px;">
         <div style="position: absolute; top: 0; left: 0; right: 40px;">
